@@ -5,6 +5,18 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var content = {
+     title: 'Article One | Prashant Jadhav',
+     heading:'Article One',
+     date:'Sep 12, 2016',
+     content:  
+           <p>
+             This is first page.
+          </p>
+
+ };
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','index.html'));
 });
