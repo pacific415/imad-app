@@ -44,15 +44,7 @@ var htmlTemplate =`
                         ${date}
                     </div>
                     <div>
-                        <p>
-                            This is the content for my first article.This is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first article
-                        </p>
-                        <p>
-                            This is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first article
-                        </p>
-                        <p>
-                            This is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first article
-                        </p>
+                      ${content}
                         </div>
                 </div>
             </body>
