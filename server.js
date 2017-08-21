@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var content = {
+var content : {
      title: 'Article One | Prashant Jadhav',
      heading:'Article One',
      date:'Sep 12, 2016',
@@ -46,5 +46,5 @@ app.get('/ui/madi.png', function (req, res) {
 
 var port = 80;
 app.listen(port, function () {
-  console.log(`IMAD course app listening on port ${port}!`);
+  console.log(`IMAD course app listening on port ${port}!`)
 });
