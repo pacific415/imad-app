@@ -20,6 +20,49 @@ var articleOne = {
                     This is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first article
                 </p>   
  };
+ 
+functionn createTemplate(date){ 
+
+        var htmlTemplate =`
+           <html>
+          `  <head>
+                <title>
+                  ${title}
+                </title>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link href="/ui/style.css" rel="stylesheet" />
+             </head>
+            <body>
+                <div class="container">
+                    <div>
+                        <a href="/">Home</a>
+                    </div>
+                    <hr/>
+                    <h3>
+                        ${heading}
+                    </h3>
+                    <div>
+                        ${date}
+                    </div>
+                    <div>
+                        <p>
+                            This is the content for my first article.This is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first article
+                        </p>
+                        <p>
+                            This is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first article
+                        </p>
+                        <p>
+                            This is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first article
+                        </p>
+                        </div>
+                </div>
+            </body>
+        </html>
+        ;
+}
+
+
+
 
 
 app.get('/', function (req, res) {
@@ -51,5 +94,5 @@ app.get('/ui/madi.png', function (req, res) {
 
 var port = 80;
 app.listen(port, function () {
-  console.log(`IMAD course app listening on port ${port}!`)
+  console.log(`IMAD course app listening on port ${port}!`);
 });
