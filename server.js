@@ -10,7 +10,7 @@ var content = {
      heading:'Article One',
      date:'Sep 12, 2016',
      content:  
-           <p>
+          ` <p>
              This is first page.
           </p>
 
