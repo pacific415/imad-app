@@ -18,20 +18,24 @@ var articleOne = {
                 </p>
                 <p>
                     This is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first articleThis is the content for my first article
-                </p>   
+                </p>`   
  };
  
-functionn createTemplate(date){ 
-var htmlTemplate =`
-           <html>
+function createTemplate (data) { 
+var title = data.title;
+var date = data.date;
+var heading = data.heading;
+var content = data.content;
+
+var htmlTemplate =
+           `<html>
               <head>
                 <title>
                     ${title}
-                </title>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link href="/ui/style.css" rel="stylesheet" />
-              </head>
-            <body>
+               </head>
+             <body>
                 <div class="container">
                     <div>
                   <a href="/">Home</a> 
@@ -42,18 +46,16 @@ var htmlTemplate =`
                     </h3>
                    <div>
                         ${date}
-                  </div> `
+                  </div> 
                   <div>
                       ${content}
-                        </div>
+                         </div>
                    </div> 
-          </body>
-        `</html>
-        ;
+             </body>
+        </html>
+        `;
+      return htmlTemplate;
 }
-
-
-
 
 
 app.get('/', function (req, res) {
@@ -61,7 +63,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one',function(req,res){
-   res.sendFile(path.join(__dirname, 'ui','article-one.html')); 
+   res.send(createTemplate(articleOne)); 
 });
 
 app.get('/article-two',function(req,res){
