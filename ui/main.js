@@ -13,7 +13,7 @@ button.onclick = function(){
         }
     };
 
-request.open('GET', 'http://prashantjadhav415.imad.hasura-app.io/counter', true);
-request.send(null);
+   request.open('GET', 'http://prashantjadhav415.imad.hasura-app.io/counter', true);
+   request.send(null);
 
 };
